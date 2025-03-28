@@ -4,12 +4,11 @@ function App() {
   const [nome, setNome] = useState ("Memphis")
   //var nome = "Abacate";
 
-  return (
-    <div>
+  const Formulario = () => {
+    return(
+      <div>
 
-      <h3>Pizzaria 2F</h3>
-
-      <input 
+      <input
       type="text" 
       name = "nome"
       onChange={(e)=>{setNome(e.target.value)}}
@@ -22,8 +21,20 @@ function App() {
       onClick={()=>{alert(nome)}}
       > 
         Clique Aqui
-        </button>
+      </button>
 
+      </div>
+    )
+  }
+
+  return (
+    <div>
+
+      <h3>Pizzaria 2F</h3>
+      <Formulario/>
+      <Formulario/>
+      <Formulario/>
+     
     </div>
 
   )
