@@ -31,9 +31,19 @@ function App() {
     )
   }
 
-
-
-
+  function somarValores(valor1, valor2)
+  {
+      let soma = valor1 + valor2;
+      alert(soma);
+  }
+  
+  window.onload=function(){
+      let botaoSomar = document.getElementById("somar");
+  
+      botaoSomar.onclick = function () { 
+          somarValores(10,5) ;
+      };
+  }
   return (
     <div>
 
